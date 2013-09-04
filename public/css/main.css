@@ -1,0 +1,23 @@
+.racer_table td {
+  background-color: white;
+  height: 40px;
+  width: 40px;
+  border: 1px solid green;
+}
+
+.racer_table .active {
+  background-color: #453536;
+
+}
+
+#player_1_win {
+	display: none;
+}
+
+#player_2_win {
+	display: none;
+}
+
+#options {
+	display: none;
+}

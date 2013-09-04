@@ -1,0 +1,13 @@
+<div class="container">
+	<h1>Results for game <%= @game.id %></h1>
+	<p>Duration: <%= @game.duration %>  </p>
+	<p>Winner: <%= @winner.name %> </p>
+
+  <form name="play_again" method="post" action="/game">
+    <input type="submit" value="Play again!" />
+  </form>
+  <form name="change_players" method="get" action="/">
+    <input type="submit" value="Change Players!" />
+  </form>
+  
+</div>

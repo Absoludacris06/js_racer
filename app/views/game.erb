@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<!--   <head>
+    <title>Style Editor</title>
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="application.js"></script>
+  </head> -->
+  <body>
+    <table class="racer_table">
+      <tr id="player1_strip">
+        <td class="active"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="player2_strip">
+        <td class="active"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+    <div class="victory">
+      <span id="player_1_win"><h1><%= @player_1.name %> wins!</h1></span>
+      <span id="player_2_win"><h1><%= @player_2.name %> wins!</h1></span>
+      <form id="options" name="see_options" method="post" action="/options" />
+        <input type="hidden" id="win" name="winner" value="default" />
+        <input type="hidden" id="dur" name="duration" value="default" />
+        <input type="submit" value="Click to Continue" />
+      </form>
+    </div>
+  </body>
+</html>
