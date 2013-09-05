@@ -8,8 +8,8 @@ post '/options' do
 	p duration
 	p duration.class
 	@game = Game.create(duration: duration, winner_id: winner_id, number_of_players: 2)
-	# Player.find(session[:player_1_id]).games << @game
-	# Player.find(session[:player_2_id]).games << @game
+	Player.find(session[:player_1_id]).games << @game
+	Player.find(session[:player_2_id]).games << @game
 	erb :options
 end
 
